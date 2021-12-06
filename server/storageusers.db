@@ -1,0 +1,42 @@
+--
+-- Файл сгенерирован с помощью SQLiteStudio v3.3.3 в Вс ноя 28 21:10:18 2021
+--
+-- Использованная кодировка текста: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Таблица: storageusers
+DROP TABLE IF EXISTS storageusers;
+
+CREATE TABLE storageusers (
+    login    STRING,
+    password STRING,
+    nickname STRING
+);
+
+INSERT INTO storageusers (
+                             login,
+                             password,
+                             nickname
+                         )
+                         VALUES (
+                             'TestTwo',
+                             1234,
+                             'TestUserTwo'
+                         );
+
+INSERT INTO storageusers (
+                             login,
+                             password,
+                             nickname
+                         )
+                         VALUES (
+                             'Test',
+                             1234,
+                             'TestUser'
+                         );
+
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
