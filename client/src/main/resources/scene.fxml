@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="960.0" prefWidth="1200.0" style="-fx-background-color: #D5CABD; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.ClientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="960.0" prefWidth="1200.0" style="-fx-background-color: #D5CABD; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.ClientController">
     <VBox fx:id="signInPane" alignment="CENTER" layoutX="400.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" spacing="10.0" StackPane.alignment="CENTER">
         <TextField fx:id="loginField" maxWidth="-Infinity" prefWidth="200.0" promptText="Login" />
         <TextField fx:id="passwordField" maxWidth="-Infinity" prefWidth="200.0" promptText="Password" />
@@ -23,10 +23,10 @@
                 <Hyperlink alignment="CENTER" onAction="#goToSingUp" text="Registrate" />
             </HBox>
             <HBox fx:id="lblBottomSingUp" alignment="CENTER" visible="false">
-                <Hyperlink alignment="CENTER" onAction="#goToSingIn" text="Back" />
+                <Hyperlink alignment="CENTER" onAction="#goToSingIn" text="back to sugn in" />
             </HBox>
         </StackPane>
-        <Label fx:id="alertMsg" text="Warning" textFill="#ff7878" visible="false" />
+        <Label fx:id="alertMsg" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text=" ERROR : " textFill="RED" visible="false" />
     </VBox>
     <VBox fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <VBox>
