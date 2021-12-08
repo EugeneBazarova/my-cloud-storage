@@ -23,10 +23,10 @@
                 <Hyperlink alignment="CENTER" onAction="#goToSingUp" text="Registrate" />
             </HBox>
             <HBox fx:id="lblBottomSingUp" alignment="CENTER" visible="false">
-                <Hyperlink alignment="CENTER" onAction="#goToSingIn" text="Back" />
+                <Hyperlink alignment="CENTER" onAction="#goToSingIn" text="back to sugn in" />
             </HBox>
         </StackPane>
-        <Label fx:id="alertMsg" text="Warning" textFill="#ff7878" visible="false" />
+        <Label fx:id="alertMsg" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text=" ERROR : " textFill="RED" visible="false" />
     </VBox>
     <VBox fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <VBox>
